@@ -11,7 +11,7 @@ void gerarGrafoAleatorio(const string& nomeArquivo, int minV, int maxV, int maxA
 {
     int n = minV + rand() % (maxV - minV + 1);
 
-    int maxArestasTeorico = n * (n - 1); // sem laços
+    int maxArestasTeorico = n * (n - 1); 
 
     int maxArestas = maxArestasPermitidas;
     if (maxArestas > maxArestasTeorico)
