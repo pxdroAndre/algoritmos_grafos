@@ -27,15 +27,19 @@ Para facilitar a execução dos testes da bateria Bat, foi criado o script bat.s
 
     Executa o programa para os 20 arquivos de entrada da pasta bat_inputs/.
 
+    Compara as saídas com as saídas dos testes presentes na pasta gabaritos/.
+
     Usa o arquivo start_vertices.txt para definir o vértice inicial para cada arquivo.
 
-    Imprime as saídas no terminal, uma para cada arquivo.
+    Guarda as saídas em uma pasta chamada saidas_geradas/
 
 # Como usar o bat.sh
 
     Coloque os arquivos .dat dos grafos na pasta testes/, nomeados como grafo1.dat, grafo2.dat, ..., grafo20.dat.
 
     Crie o arquivo start_vertex.txt com 20 linhas, cada linha com o vértice inicial para o respectivo arquivo.
+
+    Certifique-se de que bat.sh esteja na mesma pasta que floyd.bin, gabaritos/, testes/ e start_vertex.txt
 
     Dê permissão para o script:
 
@@ -45,4 +49,4 @@ Execute o script:
 
     ./bat.sh  
 
-O script vai rodar o programa para cada entrada usando o vértice inicial correspondente e mostrar as saídas no terminal.
+O script vai rodar o programa para cada entrada de teste e comparar com as saídas presentes em gabaritos/ mostrando OK no terminal se estiverem corretas.
